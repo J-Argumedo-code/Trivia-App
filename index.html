@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia - App</title>
+    <link rel="icon" type="image/png" href="resources/logo3.png">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+
+    <main>
+        <header>
+            <img src="resources/logo.png" alt="logo" width="150px" height="150px">
+        </header>
+
+        <section id="welcome" class="cards animate">
+            <h1>Bienvenido a Trivia-App <br><br>
+                <hr size="1">
+                <br> Primero que todo, ¿Cómo te llamas?</h1>
+            <form>
+                <input type="text" required id="nombre">
+                <button type="submit" class="inicio" id="inicio">Iniciar</button>
+            </form>            
+        </section>
+
+
+        <!--Selección de categoria-->
+        <section id="selection" class="cards2 animate quit">
+            <h2 id="nombre2">Selecciona la categoria que quieres jugar</h2>
+            <div class="buttons">
+                <button id="videojuegos">
+                    <img src="resources/videojuegos.jpg" alt="">
+                    <h2>Videojuegos</h2>
+                </button>
+    
+                <button id="rubik">
+                    <img src="resources/rubik.webp" alt="">
+                    <h2>Mundo Rubik's</h2>
+                </button>
+            </div>
+            <button class="regresar" id="regresar">Regresar</button>
+        </section>
+
+
+
+        <!--Parte de preguntas de Juegos-->
+        <section id="pregunta1-juego" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuál fue el primer videojuego?</h2>
+            <h3 id="opcion11juego">1) Pac-Man</h3>
+            <h3 id="opcion12juego">2) Tetris</h3>
+            <h3 id="opcion13juego">3) Pong</h3>
+        </section>
+
+
+        <section id="pregunta2-juego" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuántos luchadores hay en Street Fighter II?</h2>
+            <h3 id="opcion21juego">1)  12</h3>
+            <h3 id="opcion22juego">2)  8</h3>
+            <h3 id="opcion23juego">3)  16</h3>
+        </section>
+
+
+        <section id="pregunta3-juego" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuántas entradas para mandos tenía la Nintendo 64?</h2>
+            <h3 id="opcion31juego">1) 2</h3>
+            <h3 id="opcion32juego">2) 4</h3>
+            <h3 id="opcion33juego">3) 1</h3>
+        </section>
+
+
+        <section id="pregunta4-juego" class="pregunta animate animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuál de estos es un videojuego de autos de carrera?</h2>
+            <h3 id="opcion41juego">1) R-Type</h3>
+            <h3 id="opcion42juego">2) Top Gear</h3>
+            <h3 id="opcion43juego">3) Frogger</h3>
+        </section>
+
+
+        <section id="pregunta5-juego" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuál fue la primera consola de PlayStation?</h2>
+            <h3 id="opcion51juego">1) PS Project</h3>
+            <h3 id="opcion52juego">2) Play One</h3>
+            <h3 id="opcion53juego">3) PS1</h3>
+        </section>
+
+
+        <section id="pregunta6-juego" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuál es el material de la primera espada que recibes en The Legend of Zelda?</h2>
+            <h3 id="opcion61juego">1) Hierro</h3>
+            <h3 id="opcion62juego">2) Cobre</h3>
+            <h3 id="opcion63juego">3) Madera</h3>
+        </section>
+
+
+        <section id="pregunta7-juego" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cómo se llama la ciudad en la que desenvuelve Resident Evil?</h2>
+            <h3 id="opcion71juego">1)  Raccon City</h3>
+            <h3 id="opcion72juego">2)  New York</h3>
+            <h3 id="opcion73juego">3)  Metrópolis</h3>
+        </section>
+
+
+
+        <!--Parte de preguntas de Rubik-->
+        <section id="pregunta1-rubik" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuantas combinaciones posibles puede tener el cubo de Rubik?</h2>
+            <h3 id="opcion11rubik">1)  8 millones</h3>
+            <h3 id="opcion12rubik">2)  20 billones</h3>
+            <h3 id="opcion13rubik">3)  +43 trillones</h3>
+        </section>
+
+
+        <section id="pregunta2-rubik" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Quien tiene el actual récord mundial de cubo de rubik con 3.47s?</h2>
+            <h3 id="opcion21rubik">1)  Leo Borromeo</h3>
+            <h3 id="opcion22rubik">2)  Yusheng Du</h3>
+            <h3 id="opcion23rubik">3)  Feliks Zemdegs</h3>
+        </section>
+
+
+        <section id="pregunta3-rubik" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Dónde nació el creador del cubo de Rubik, Erno Rubik?</h2>
+            <h3 id="opcion31rubik">1)  Hungría</h3>
+            <h3 id="opcion32rubik">2)  Dinamarca</h3>
+            <h3 id="opcion33rubik">3)  Polonia</h3>
+        </section>
+
+
+        <section id="pregunta4-rubik" class="pregunta animate animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cómo se llamaba originalmente el cubo de Rubik?</h2>
+            <h3 id="opcion41rubik">1)  Caja de colores</h3>
+            <h3 id="opcion42rubik">2)  Rompecabezas cuadrado</h3>
+            <h3 id="opcion43rubik">3)  Cubo mágico</h3>
+        </section>
+
+
+        <section id="pregunta5-rubik" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuál es la forma más rápida de resolver el cubo de Rubik?</h2>
+            <h3 id="opcion51rubik">1)  Sistema Petrus</h3>
+            <h3 id="opcion52rubik">2)  Método Fridrich</h3>
+            <h3 id="opcion53rubik">3)  Método de Gilles Roux</h3>
+        </section>
+
+
+        <section id="pregunta6-rubik" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿En qué año fue el primer campeonato mundial de Rubik?</h2>
+            <h3 id="opcion61rubik">1)  1996</h3>
+            <h3 id="opcion62rubik">2)  2000</h3>
+            <h3 id="opcion63rubik">3)  1982</h3>
+        </section>
+
+
+        <section id="pregunta7-rubik" class="pregunta animate quit">
+            <div class="counter">
+                <div class="carga">
+                </div>
+                <h4>31</h4>
+            </div>
+
+            <h2>¿Cuánto tardó el primer campeón mundial, Minh Thai, en resolver el cubo de Rubik?</h2>
+            <h3 id="opcion71rubik">1)  1 minuto 12,5 segundos</h3>
+            <h3 id="opcion72rubik">2)  22,95 segundos</h3>
+            <h3 id="opcion73rubik">3)  30 segundos</h3>
+        </section>
+
+
+        <section id="resultados" class="cards3 quit">
+
+            <h6>Felicitaciones </h6><h5></h5><h6>Felicitaciones </h6>
+            <img src="resources/celebrate.png" alt="">
+            <img src="resources/celebrate.png" alt="" class="img2"> 
+            <button class="regresar" id="regresar2">Regresar</button>
+        </section>
+    </main>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
