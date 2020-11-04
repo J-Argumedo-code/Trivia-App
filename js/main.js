@@ -286,9 +286,7 @@ function inicio(){
     if (nombre.value === "") {
         
     }else{
-        console.log(pregunta1rubik.children[0].children[1])
         valor = nombre.value;
-        console.log(valor);
         iniciar.setAttribute("type", "button");
         welcome.classList.add("quit");
         selection.classList.remove("quit");
@@ -501,7 +499,6 @@ function elegirPregunta(preguntasB) {
 
 //Función Contador Videojuegos
 function counter1(count, func, pregunta){
-    console.log(count, func, pregunta)
     if (pregunta.classList.contains("quit")) {
         
     }else if (count.innerHTML === "0"){
@@ -559,7 +556,6 @@ function counter17(){
 
 //Función Contador Rubik
 function counter2(count, func, pregunta){
-    console.log(count, func, pregunta)
     if (pregunta.classList.contains("quit")) {
         
     }else if (count.innerHTML === "0"){
@@ -617,7 +613,6 @@ function counter27(){
 
 
 //Resultados
-//Quitar todas las preguntas
 function quitarPreguntas(){
     pregunta1juego.classList.add("quit");
     pregunta2juego.classList.add("quit");
