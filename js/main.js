@@ -279,7 +279,6 @@ opcion73rubik.addEventListener("click", function () {
 
 
 
-
 let valor = "";
 
 function inicio(){
@@ -361,137 +360,65 @@ function resetearCounter(pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, 
 }
 
 
+//Elegir preguntas
+function FuncElegirPreguntas(pregunta1, pregunta2, pregunta3, pregunta4, pregunta5, pregunta6, pregunta7){
+    pregunta1.classList.add("quit");
+    pregunta2.classList.add("quit");
+    pregunta3.classList.add("quit");
+    pregunta4.classList.add("quit");
+    pregunta5.classList.add("quit");
+    pregunta6.classList.add("quit");
+    pregunta7.classList.remove("quit");
+}
+
+
 //Elegir Pregunta Videojuegos
 function elegirPregunta2(preguntasB2) {
     if (preguntasB2[contador2]===1) {
-        pregunta2juego.classList.add("quit");
-        pregunta3juego.classList.add("quit");
-        pregunta4juego.classList.add("quit");
-        pregunta5juego.classList.add("quit");
-        pregunta6juego.classList.add("quit");
-        pregunta7juego.classList.add("quit");
-        pregunta1juego.classList.remove("quit");
+        FuncElegirPreguntas(pregunta2juego, pregunta3juego, pregunta4juego, pregunta5juego, pregunta6juego, pregunta7juego, pregunta1juego)
         counter11();
     } else if (preguntasB2[contador2]===2) {
-        pregunta1juego.classList.add("quit");
-        pregunta3juego.classList.add("quit");
-        pregunta4juego.classList.add("quit");
-        pregunta5juego.classList.add("quit");
-        pregunta6juego.classList.add("quit");
-        pregunta7juego.classList.add("quit");
-        pregunta2juego.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1juego, pregunta3juego, pregunta4juego, pregunta5juego, pregunta6juego, pregunta7juego, pregunta2juego)
         counter12();
     } else if (preguntasB2[contador2]===3) {
-        pregunta1juego.classList.add("quit");
-        pregunta2juego.classList.add("quit");
-        pregunta4juego.classList.add("quit");
-        pregunta5juego.classList.add("quit");
-        pregunta6juego.classList.add("quit");
-        pregunta7juego.classList.add("quit");
-        pregunta3juego.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1juego, pregunta2juego, pregunta4juego, pregunta5juego, pregunta6juego, pregunta7juego, pregunta3juego)
         counter13();
     } else if (preguntasB2[contador2]===4) {
-        pregunta2juego.classList.add("quit");
-        pregunta3juego.classList.add("quit");
-        pregunta1juego.classList.add("quit");
-        pregunta5juego.classList.add("quit");
-        pregunta6juego.classList.add("quit");
-        pregunta7juego.classList.add("quit");
-        pregunta4juego.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1juego, pregunta2juego, pregunta3juego, pregunta5juego, pregunta6juego, pregunta7juego, pregunta4juego)
         counter14();
     } else if (preguntasB2[contador2]===5) {
-        pregunta2juego.classList.add("quit");
-        pregunta3juego.classList.add("quit");
-        pregunta4juego.classList.add("quit");
-        pregunta1juego.classList.add("quit");
-        pregunta6juego.classList.add("quit");
-        pregunta7juego.classList.add("quit");
-        pregunta5juego.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1juego, pregunta2juego, pregunta3juego, pregunta4juego, pregunta6juego, pregunta7juego, pregunta5juego)
         counter15();
     } else if (preguntasB2[contador2]===6) {
-        pregunta2juego.classList.add("quit");
-        pregunta3juego.classList.add("quit");
-        pregunta4juego.classList.add("quit");
-        pregunta5juego.classList.add("quit");
-        pregunta1juego.classList.add("quit");
-        pregunta7juego.classList.add("quit");
-        pregunta6juego.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1juego, pregunta2juego, pregunta3juego, pregunta4juego, pregunta5juego, pregunta7juego, pregunta6juego)
         counter16();
     } else if (preguntasB2[contador2]===7) {
-        pregunta2juego.classList.add("quit");
-        pregunta3juego.classList.add("quit");
-        pregunta4juego.classList.add("quit");
-        pregunta5juego.classList.add("quit");
-        pregunta6juego.classList.add("quit");
-        pregunta1juego.classList.add("quit");
-        pregunta7juego.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1juego, pregunta2juego, pregunta3juego, pregunta4juego, pregunta5juego, pregunta6juego, pregunta7juego)
         counter17();
     }
 }
 //Elegir Pregunta Rubik
 function elegirPregunta(preguntasB) {
     if (preguntasB[contador]===1) {
-        pregunta2rubik.classList.add("quit");
-        pregunta3rubik.classList.add("quit");
-        pregunta4rubik.classList.add("quit");
-        pregunta5rubik.classList.add("quit");
-        pregunta6rubik.classList.add("quit");
-        pregunta7rubik.classList.add("quit");
-        pregunta1rubik.classList.remove("quit");
+        FuncElegirPreguntas(pregunta2rubik, pregunta3rubik, pregunta4rubik, pregunta5rubik, pregunta6rubik, pregunta7rubik, pregunta1rubik)
         counter21();
     } else if (preguntasB[contador]===2) {
-        pregunta1rubik.classList.add("quit");
-        pregunta3rubik.classList.add("quit");
-        pregunta4rubik.classList.add("quit");
-        pregunta5rubik.classList.add("quit");
-        pregunta6rubik.classList.add("quit");
-        pregunta7rubik.classList.add("quit");
-        pregunta2rubik.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1rubik, pregunta3rubik, pregunta4rubik, pregunta5rubik, pregunta6rubik, pregunta7rubik, pregunta2rubik)
         counter22();
     } else if (preguntasB[contador]===3) {
-        pregunta1rubik.classList.add("quit");
-        pregunta2rubik.classList.add("quit");
-        pregunta4rubik.classList.add("quit");
-        pregunta5rubik.classList.add("quit");
-        pregunta6rubik.classList.add("quit");
-        pregunta7rubik.classList.add("quit");
-        pregunta3rubik.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1rubik, pregunta2rubik, pregunta4rubik, pregunta5rubik, pregunta6rubik, pregunta7rubik, pregunta3rubik)
         counter23();
     } else if (preguntasB[contador]===4) {
-        pregunta2rubik.classList.add("quit");
-        pregunta3rubik.classList.add("quit");
-        pregunta1rubik.classList.add("quit");
-        pregunta5rubik.classList.add("quit");
-        pregunta6rubik.classList.add("quit");
-        pregunta7rubik.classList.add("quit");
-        pregunta4rubik.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1rubik, pregunta2rubik, pregunta3rubik, pregunta5rubik, pregunta6rubik, pregunta7rubik, pregunta4rubik)
         counter24();
     } else if (preguntasB[contador]===5) {
-        pregunta2rubik.classList.add("quit");
-        pregunta3rubik.classList.add("quit");
-        pregunta4rubik.classList.add("quit");
-        pregunta1rubik.classList.add("quit");
-        pregunta6rubik.classList.add("quit");
-        pregunta7rubik.classList.add("quit");
-        pregunta5rubik.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1rubik, pregunta2rubik, pregunta3rubik, pregunta4rubik, pregunta6rubik, pregunta7rubik, pregunta5rubik)
         counter25();
     } else if (preguntasB[contador]===6) {
-        pregunta2rubik.classList.add("quit");
-        pregunta3rubik.classList.add("quit");
-        pregunta4rubik.classList.add("quit");
-        pregunta5rubik.classList.add("quit");
-        pregunta1rubik.classList.add("quit");
-        pregunta7rubik.classList.add("quit");
-        pregunta6rubik.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1rubik, pregunta2rubik, pregunta3rubik, pregunta4rubik, pregunta5rubik, pregunta7rubik, pregunta6rubik)
         counter26();
     } else if (preguntasB[contador]===7) {
-        pregunta2rubik.classList.add("quit");
-        pregunta3rubik.classList.add("quit");
-        pregunta4rubik.classList.add("quit");
-        pregunta5rubik.classList.add("quit");
-        pregunta6rubik.classList.add("quit");
-        pregunta1rubik.classList.add("quit");
-        pregunta7rubik.classList.remove("quit");
+        FuncElegirPreguntas(pregunta1rubik, pregunta2rubik, pregunta3rubik, pregunta4rubik, pregunta5rubik, pregunta6rubik, pregunta7rubik)
         counter27();
     }
 }
