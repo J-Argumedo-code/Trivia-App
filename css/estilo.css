@@ -57,11 +57,11 @@ hr{
     content: '';
     position: absolute;
     left: -2px;
-    top: -8px;
+    top: -9px;
     background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5, #ff004c, #fb0094, #f60, #ffff00, #00c3ff);
     background-size: 300%;
     width: calc(100% + 4px);
-    height: calc(100% + 18px);
+    height: calc(100% + 17px);
     z-index: -1;
     animation: gradient 15s ease-out infinite;
 }
@@ -354,12 +354,6 @@ h3:hover:before {
 .cards3 button:hover h2{
     color: black;
 }
-
-
-
-
-
-
 
 
 
