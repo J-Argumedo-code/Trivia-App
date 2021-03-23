@@ -9,19 +9,19 @@
     <link rel="stylesheet" href="css/estilo.css">
 
 </head>
-<body>
+<body class="body">
 
-    <main>
+    <main class="main">
         <header>
             <img src="resources/logo.png" alt="logo" width="150px" height="150px">
         </header>
 
         <section id="welcome" class="cards animate">
             <h1>Bienvenido a Trivia-App <br><br>
-                <hr size="1">
+                <hr size="1" class="hr">
                 <br> Primero que todo, ¿Cómo te llamas?</h1>
             <form>
-                <input type="text" required id="nombre">
+                <input type="text" required id="nombre" class="input">
                 <button type="submit" class="inicio" id="inicio">Iniciar</button>
             </form>            
         </section>
@@ -30,17 +30,17 @@
         <!--Selección de categoria-->
         <section id="selection" class="cards2 animate quit">
             <h2 id="nombre2">Selecciona la categoria que quieres jugar</h2>
-            <div class="buttons">
-                <button id="videojuegos">
+            <article class="buttons">
+                <button id="videojuegos" class="btnSelection">
                     <img src="resources/videojuegos.jpg" alt="">
                     <h2>Videojuegos</h2>
                 </button>
     
-                <button id="rubik">
+                <button id="rubik" class="btnSelection">
                     <img src="resources/rubik.webp" alt="">
                     <h2>Mundo Rubik's</h2>
                 </button>
-            </div>
+            </article>
             <button class="regresar" id="regresar">Regresar</button>
         </section>
 
@@ -48,11 +48,11 @@
 
         <!--Parte de preguntas de Juegos-->
         <section id="pregunta1-juego" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuál fue el primer videojuego?</h2>
             <h3 id="opcion11juego">1) Pac-Man</h3>
@@ -62,11 +62,11 @@
 
 
         <section id="pregunta2-juego" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuántos luchadores hay en Street Fighter II?</h2>
             <h3 id="opcion21juego">1)  12</h3>
@@ -76,11 +76,11 @@
 
 
         <section id="pregunta3-juego" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuántas entradas para mandos tenía la Nintendo 64?</h2>
             <h3 id="opcion31juego">1) 2</h3>
@@ -90,11 +90,11 @@
 
 
         <section id="pregunta4-juego" class="pregunta animate animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuál de estos es un videojuego de autos de carrera?</h2>
             <h3 id="opcion41juego">1) R-Type</h3>
@@ -104,11 +104,11 @@
 
 
         <section id="pregunta5-juego" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuál fue la primera consola de PlayStation?</h2>
             <h3 id="opcion51juego">1) PS Project</h3>
@@ -118,11 +118,11 @@
 
 
         <section id="pregunta6-juego" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuál es el material de la primera espada que recibes en The Legend of Zelda?</h2>
             <h3 id="opcion61juego">1) Hierro</h3>
@@ -132,11 +132,11 @@
 
 
         <section id="pregunta7-juego" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cómo se llama la ciudad en la que desenvuelve Resident Evil?</h2>
             <h3 id="opcion71juego">1)  Raccon City</h3>
@@ -148,11 +148,11 @@
 
         <!--Parte de preguntas de Rubik-->
         <section id="pregunta1-rubik" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuantas combinaciones posibles puede tener el cubo de Rubik?</h2>
             <h3 id="opcion11rubik">1)  8 millones</h3>
@@ -162,11 +162,11 @@
 
 
         <section id="pregunta2-rubik" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Quien tiene el actual récord mundial de cubo de rubik con 3.47s?</h2>
             <h3 id="opcion21rubik">1)  Leo Borromeo</h3>
@@ -176,11 +176,11 @@
 
 
         <section id="pregunta3-rubik" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Dónde nació el creador del cubo de Rubik, Erno Rubik?</h2>
             <h3 id="opcion31rubik">1)  Hungría</h3>
@@ -190,11 +190,11 @@
 
 
         <section id="pregunta4-rubik" class="pregunta animate animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cómo se llamaba originalmente el cubo de Rubik?</h2>
             <h3 id="opcion41rubik">1)  Caja de colores</h3>
@@ -204,11 +204,11 @@
 
 
         <section id="pregunta5-rubik" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuál es la forma más rápida de resolver el cubo de Rubik?</h2>
             <h3 id="opcion51rubik">1)  Sistema Petrus</h3>
@@ -218,11 +218,11 @@
 
 
         <section id="pregunta6-rubik" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿En qué año fue el primer campeonato mundial de Rubik?</h2>
             <h3 id="opcion61rubik">1)  1996</h3>
@@ -232,11 +232,11 @@
 
 
         <section id="pregunta7-rubik" class="pregunta animate quit">
-            <div class="counter">
+            <article class="counter">
                 <div class="carga">
                 </div>
                 <h4>31</h4>
-            </div>
+            </article>
 
             <h2>¿Cuánto tardó el primer campeón mundial, Minh Thai, en resolver el cubo de Rubik?</h2>
             <h3 id="opcion71rubik">1)  1 minuto 12,5 segundos</h3>
@@ -246,7 +246,6 @@
 
 
         <section id="resultados" class="cards3 quit">
-
             <h6>Felicitaciones </h6><h5></h5><h6>respuestas correctas.</h6>
             <img src="resources/celebrate.png" alt="">
             <img src="resources/celebrate.png" alt="" class="img2"> 

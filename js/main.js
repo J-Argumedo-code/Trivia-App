@@ -60,7 +60,6 @@ rubik.addEventListener("click", function () {
     rubiks();
 });
 
-
 function inicio(){
     if (name.value === "") {
         
